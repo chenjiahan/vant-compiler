@@ -1,0 +1,29 @@
+{
+  "name": "vue-sfc-compiler",
+  "version": "0.0.1",
+  "description": "compile vue single file component to js file.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenjiahan/vue-sfc-compiler.git"
+  },
+  "keywords": [
+    "sfc",
+    "compile",
+    "vue",
+    "component"
+  ],
+  "author": "neverland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenjiahan/vue-sfc-compiler/issues"
+  },
+  "homepage": "https://github.com/chenjiahan/vue-sfc-compiler#readme",
+  "dependencies": {
+    "vue-template-compiler": "^2.4.2",
+    "vue-template-es2015-compiler": "^1.5.3"
+  }
+}
