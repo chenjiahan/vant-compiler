@@ -78,7 +78,8 @@ function renderJs(rawScript, render) {
   const { matches, script } = findInjectionPosition(rawScript);
 
   if (matches && matches.length) {
-    let renderScript = `module.exports={\n  render: ${render.render},\n\n  staticRenderFns: ${render.staticRenderFns}, \n`;
+    const staticRenderFnsStr = render.staticRenderFns !== '[]' ? `staticRenderFns: ${render.staticRenderFns}, \n` : '';
+    const renderScript = `module.exports={\n  render: ${render.render},\n\n  ${staticRenderFnsStr}`;
 
     return script
       .split(matches[1])

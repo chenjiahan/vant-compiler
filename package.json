@@ -1,6 +1,6 @@
 {
   "name": "vue-sfc-compiler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "compile vue single file component to js file.",
   "main": "src/index.js",
   "scripts": {
