@@ -1,6 +1,6 @@
 {
   "name": "vue-sfc-compiler",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "compile vue single file component to js file.",
   "main": "src/index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/chenjiahan/vue-sfc-compiler#readme",
   "dependencies": {
-    "vue-template-compiler": "^2.4.2",
-    "vue-template-es2015-compiler": "^1.5.3"
+    "vue-template-compiler": ">=2.5.0",
+    "vue-template-es2015-compiler": ">=1.6.0"
   }
 }
