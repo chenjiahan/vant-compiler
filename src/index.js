@@ -21,9 +21,7 @@ function parseTemplate(template) {
   }
 
   return {
-    render: templateCompilerES2015(
-      `var TEMP_VAR = ${toFunction(compiled.render)}`
-    ).replace('var TEMP_VAR = ', ''),
+    render: toFunction(compiled.render),
     staticRenderFns: `[${compiled.staticRenderFns.map(toFunction).join(',')}]`
   };
 }
@@ -33,7 +31,9 @@ function pad(html) {
 }
 
 function toFunction(code) {
-  return `function (){${code}}`;
+  return templateCompilerES2015(
+    `var TEMP_VAR = function (){${code}}`
+  ).replace('var TEMP_VAR = ', '');
 }
 
 // 寻找 render 函数插入位置
