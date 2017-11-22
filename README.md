@@ -1,2 +1,9 @@
 # vue-sfc-compiler
-compile vue single file component to js file.
+Vue single file component compiler.
+
+### Options
+
+| Option | Default | Description |
+|---|---|---|
+| template | `{ preserveWhitespace: false }` | Vue template compiler options |
+| babel | `{}` | babel options |

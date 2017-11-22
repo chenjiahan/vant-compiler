@@ -1,10 +1,12 @@
 {
   "name": "vue-sfc-compiler",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "compile vue single file component to js file.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "build": "babel src --out-dir lib",
+    "release": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,15 @@
     "url": "https://github.com/chenjiahan/vue-sfc-compiler/issues"
   },
   "homepage": "https://github.com/chenjiahan/vue-sfc-compiler#readme",
-  "dependencies": {
+  "peerDependencies": {
     "vue-template-compiler": ">=2.5.0",
     "vue-template-es2015-compiler": ">=1.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "vue-template-compiler": "^2.5.8",
+    "vue-template-es2015-compiler": "^1.6.0"
   }
 }
