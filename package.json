@@ -1,6 +1,6 @@
 {
   "name": "vue-sfc-compiler",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "compile vue single file component to js file.",
   "main": "lib/index.js",
   "scripts": {
@@ -34,5 +34,8 @@
     "babel-preset-env": "^1.6.1",
     "vue-template-compiler": "^2.5.8",
     "vue-template-es2015-compiler": "^1.6.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
   }
 }
