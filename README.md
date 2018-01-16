@@ -5,5 +5,5 @@ Vue single file component compiler.
 
 | Option | Default | Description |
 |---|---|---|
-| template | `{ preserveWhitespace: false }` | Vue template compiler options |
+| template | `{ preserveWhitespace: false }` | Vue template compiler options |
 | babel | `{}` | babel options |
