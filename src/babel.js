@@ -1,9 +1,8 @@
-import { transform } from 'babel-core';
+import { transform } from '@babel/core';
 import path from 'path';
 
 const defaultConfig = {
-  babelrc: true,
-  extends: path.resolve(__dirname, '../.babelrc')
+  configFile: path.join(__dirname, '../babel.config.js')
 };
 
 export default function(source, config = {}) {

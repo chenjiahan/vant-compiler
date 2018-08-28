@@ -1,4 +1,0 @@
-{
-  "presets": [["env", { "modules": "commonjs", "loose": true }]],
-  "plugins": ["transform-object-rest-spread"]
-}
