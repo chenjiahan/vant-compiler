@@ -1,5 +1,20 @@
-# vue-sfc-compiler
+# vant-compiler
+
 Vue single file component compiler.
+
+## Install
+
+#### NPM
+
+```shell
+npm i @vant/compiler -S
+```
+
+#### YARN
+
+```shell
+yarn add @vant/compiler
+```
 
 ### Options
 
